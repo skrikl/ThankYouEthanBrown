@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src=".readme/index.png" alt="Book cover">
+  <img src=".readme/index.png" alt="Book cover" width="500">
   <br>
   <p>thankYouEthanBrown</p>
 </h1>
