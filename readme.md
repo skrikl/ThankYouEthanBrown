@@ -1,6 +1,12 @@
 # thankYouEthanBrown
+<h1 align="center">
+  <br>
+  <img src=".readme/mergeable-flex.png" alt="Mergeable" width="197">
+  <br>
+  <p>Mergeable</p>
+</h1>
 
-<img src=".readme/banner.png" alt="Book cover" width="400">
+<img src="./.readme/banner.png" alt="Book cover" width="400">
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 TODO: Put more badges here.
