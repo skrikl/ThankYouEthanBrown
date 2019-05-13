@@ -10,6 +10,7 @@
 This is a tracker of my JS learning progress with [Ethan Brown's](https://github.com/EthanRBrown) &#39;Learning JavaScript 3rd edition&#39; During the read, I put the code examples from each book chapter into respective repository folders. Short notes, new vocabulary and other noteworthy pieces of information were stored in this file. I hope you find these useful.
 
 > ☝ **NOTE: You should never rely on someone else's notes and read this book on your own. But it might be a good idea to check underwritten bullets to find something you are yet unfamiliar with. Things, that look `like this` below can be used as a markers: if you are uncertain what the marked term(technology, web resource, person, book, etc.) means, then it could be a good idea to read the respective chapter of the book and/or google that term to know more.**
+
 **📖 Contents:** 
 
 - [Chapter1](#chapter1)
@@ -89,8 +90,8 @@ To make it work add (cb) to the task functions (you can check the gulpfile examp
 13. 
 14. 
 ## Chapter3
-1.  
-2.  
+1.  Data types are abstractions over 'zeroes and ones' to represent numbers, srtings, dates and so on.
+2.  Data storage mechanisms include variables, constants and literals. 
 3.  
 4.  
 5.  
