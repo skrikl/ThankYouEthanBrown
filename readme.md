@@ -82,17 +82,15 @@ Put your scripts to the end of the body by default. There are several reasons fo
     `Initialize npm in project folder`
     `Install GULP as dev-dependancy`
     `Create GULP tasks` (check bullet 9. for an explanation of 'dependency' word used in the book's example)
-
+    `Start the task manager from comand shell` (check bullet 10. for a possible solution for a error you might get at this step)
 9.  NOTE Dependencies of the whole project **as files** will be downloaded by npm. We put it in gulpfile.js as well to be able to use these with GULP **as JS external libraries**.
-10. Ethan seems to be using gulp3 while writing the book and following the book's instructions you will get gulp4 with a slightly different approach to callback functions. The result may be the following:
-![gulp4 callback error](chapter2/img/gulpCBerror.png)
+10. Ethan seems to be using gulp3 while writing the book and following the book's instructions you will get gulp4 from npm with a slightly different approach to callback functions. The result may be the following:
+![gulp4 callback error](chapter2/img/gulpCBerror.png)  
 To make it work add (cb) to the task functions (you can check the gulpfile example in chapter2 folder). There are different methods to provide a correct callback in gulp4, check gulp documentation and search for 'callback' keyword to learn why's and how's.
-11. 
-12. 
-13. 
-14. 
+
 ## Chapter3
-1.  Data types are abstractions over 'zeroes and ones' to represent numbers, srtings, dates and so on.
+
+1.  Data types are abstractions over 'zeroes and ones' to represent numbers, strings, dates and so on.
 2.  Data storage mechanisms include `variables, constants and literals`. 
 3.  There are `primitive` immutable data types and mutable `objects`. Number, String and Boolean are primitives, though all of these have a respective built-in object companions in JavaScript. Null, Undefined and Symbol are primitives as well. All the reast are objects. 
 4.  `О.1 + О.2 = О.30000000000000004` Deal with it.
@@ -110,7 +108,16 @@ const message = "The current temperature is ${currentTemp}\u00b0C";
 12. There is `computed member access` option in case you need 'bad' property names in your object. Example `myobject[invalid spacing in name]` = "Still valid key, though cannot be accessed using a standard .dot operator";
 13. Function can be added to object as ordinary key-value pair. Key will be that function name, value - function body.
 14. Delete property with `delete objectName.objectProperty`;
-15. Number, String and Boolean data types seem to have properties because after a call, a temporary object of a respective type is created. You can assign a property to a primitive with no visible error because that property will be assigned to a temporary object. Still this data will be lost as the object is destroyed immidiately after the call.    
+15. Number, String and Boolean data types seem to have properties because after a call, a temporary object of a respective type is created. You can assign a property to a primitive with no visible error because that property will be assigned to a temporary object. Still this data will be lost as the object is destroyed immidiately after the call.
+16. Array is a special object with fixed order of elements. Arrays can contain an element of any data type. Example:
+`const arr = ['true',
+              false,
+              null,
+              {1: 'Even objects!'},
+];`
+17. Regular expression, or `regex` is a syntax for search/replace operations in strings. `const email = /\b[a-z0-9._-]+@[a-z_-]+(?:\.[a-z]+)+\b/;`.
+18. 
+
 ## Chapter4
 1.  
 2.  
