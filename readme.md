@@ -91,10 +91,10 @@ To make it work add (cb) to the task functions (you can check the gulpfile examp
 ## Chapter3
 
 1.  Data types are abstractions over 'zeroes and ones' to represent numbers, strings, dates and so on.
-2.  Data storage mechanisms include `variables, constants and literals`. 
-3.  There are `primitive` immutable data types and mutable `objects`. Number, String and Boolean are primitives, though all of these have a respective built-in object companions in JavaScript. Null, Undefined and Symbol are primitives as well. All the reast are objects. 
+2.  Data storage mechanisms include `variables, constants, and literals`. 
+3.  There are `primitive` immutable data types and mutable `objects`. Number, String, and Boolean are primitives, though all of these have respective built-in object companions in JavaScript. Null, Undefined and Symbol are primitives as well. All the rest are objects. 
 4.  `О.1 + О.2 = О.30000000000000004` Deal with it.
-5.  Number as object has some neat features: `Number.EPSILON`, Number.MAX_VALUE, Number.MIN_SAFE_INTEGER and more.
+5.  Number as an object has some neat features: `Number.EPSILON`, Number.MAX_VALUE, Number.MIN_SAFE_INTEGER and more.
 6.  const s = "In JavaScript, use \\ as an `escape character` in strings";
 7.  `Template string` is:
 let currentTemp = 21.5;
@@ -104,19 +104,21 @@ const message = "The current temperature is ${currentTemp}\u00b0C";
 9.  Symbols are ES6 update, each symbol is unique which is good for identifiers for example. Creation: 
 `const RED = Symbol();`
 10. When in doubt prefer `null` over `undefined`.
-11. Object is a container and its contents are subject to change (contents change, but object is the same). Contents of objects are called `object members or properties`. 
+11. An object is a container and its contents are subject to change (contents change, but the object is the same). Contents of objects are called `object members or properties`. 
 12. There is `computed member access` option in case you need 'bad' property names in your object. Example `myobject[invalid spacing in name]` = "Still valid key, though cannot be accessed using a standard .dot operator";
-13. Function can be added to object as ordinary key-value pair. Key will be that function name, value - function body.
+13. A function can be added to an object as ordinary key-value pair. Key will be that function name, value - function body.
 14. Delete property with `delete objectName.objectProperty`;
-15. Number, String and Boolean data types seem to have properties because after a call, a temporary object of a respective type is created. You can assign a property to a primitive with no visible error because that property will be assigned to a temporary object. Still this data will be lost as the object is destroyed immidiately after the call.
-16. Array is a special object with fixed order of elements. Arrays can contain an element of any data type. Example:
+15. Number, String, and Boolean data types seem to have properties because, after a call, a temporary object of a respective type is created. You can assign a property to a primitive with no visible error because that property will be assigned to a temporary object. Still, this data will be lost as the object is destroyed immediately after the call.
+16. An array is a special object with a fixed order of elements. Arrays can contain an element of any data type. Example:
 `const arr = ['true',
               false,
               null,
               {1: 'Even objects!'},
 ];`
-17. Regular expression, or `regex` is a syntax for search/replace operations in strings. `const email = /\b[a-z0-9._-]+@[a-z_-]+(?:\.[a-z]+)+\b/;`.
-18. 
+17. A regular expression or `regex` is a syntax for search/replace operations in strings. `const email = /\b[a-z0-9._-]+@[a-z_-]+(?:\.[a-z]+)+\b/;`.
+18. Convert strings to numbers using `Number(); parseInt(); parseFloat();`.
+19. Convert  all JS objects to strings using `.toString();` method
+20. Convert all values to boolean using `!!` or `Boolean();`.
 
 ## Chapter4
 1.  
