@@ -119,12 +119,14 @@ const message = "The current temperature is ${currentTemp}\u00b0C";
 18. Convert strings to numbers using `Number(); parseInt(); parseFloat();`.
 19. Convert  all JS objects to strings using `.toString();` method
 20. Convert all values to boolean using `!!` or `Boolean();`.
+21. There were no coding exercise in this chapter.
 
 ## Chapter4
-1.  
-2.  
-3.  
-4.  
+
+1.  `Flowchart` is a visual representation of program workflow. 
+2.  In this chapter you can concidet `truthy === true` and `falsy === false`. More conimg in chapter 5.
+3.  When you add { and } in your JS code you create a `block statement or compound statement`. 
+4.  Generally indents does not affect interpreter, however correct indentation is essential for a clean, readable code.  
 5.  
 6.  
 7.  
@@ -135,7 +137,7 @@ const message = "The current temperature is ${currentTemp}\u00b0C";
 12. 
 13. 
 14. 
-
+In this chapter you create 'Crown and Ancor' game. 
 ## Chapter5
 1.  
 2.  
