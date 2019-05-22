@@ -127,7 +127,7 @@ const message = "The current temperature is ${currentTemp}\u00b0C";
 2.  In this chapter you can concidet `truthy === true` and `falsy === false`. More conimg in chapter 5.
 3.  When you add { and } in your JS code you create a `block statement or compound statement`. 
 4.  Generally indents does not affect interpreter, however correct indentation is essential for a clean, readable code.  
-5.  
+5.  Remember that `console.log(\`a string with ${something})\`;` will return the value of `something` but console.log('a string with ${something}') won't. 
 6.  
 7.  
 8.  
