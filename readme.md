@@ -44,7 +44,7 @@ Put your scripts to the end of the body by default. There are several reasons fo
 10. CDNs aka content delivery networks is an easy way to include public JS libraries to your project. We will use jQuery and PaperJS in this chapter's example. Yes, jQuery is as old as you, but it is still commonly used and a lot of tools are based on it. 
 11. Boilerplate is just a repetitive standard piece of code that you use to set up things like PaperJS or other external libraries.
 12. Asynchronous events are the ones that happen without your control. The user decides to click, or external script finishes work - you never know **exactly** when the event happens. As easy as that.
-13. The result of this chapter's exercise looks mpre or less like this: 
+13. The result of this chapter's exercise looks more or less like this: 
 ![chapter1 result](chapter1/img/example_chapter1.png)
 
 ## Chapter2
@@ -93,29 +93,35 @@ To make it work add (cb) to the task functions (you can check the gulpfile examp
 1.  Data types are abstractions over 'zeroes and ones' to represent numbers, strings, dates and so on.
 2.  Data storage mechanisms include `variables, constants, and literals`. 
 3.  There are `primitive` immutable data types and mutable `objects`. Number, String, and Boolean are primitives, though all of these have respective built-in object companions in JavaScript. Null, Undefined and Symbol are primitives as well. All the rest are objects. 
-4.  `О.1 + О.2 = О.30000000000000004` Deal with it.
+4.  `О.1 + О.2 = О.30000000000000004`
 5.  Number as an object has some neat features: `Number.EPSILON`, Number.MAX_VALUE, Number.MIN_SAFE_INTEGER and more.
 6.  const s = "In JavaScript, use \\ as an `escape character` in strings";
-7.  `Template string` is:
-let currentTemp = 21.5;
-const message = "The current temperature is ${currentTemp}\u00b0C";
-8.  3 + '30' = '330'; 3 * '30' = 90; 
-`alert(let JSisCool = "false")` alerts true
-9.  Symbols are ES6 update, each symbol is unique which is good for identifiers for example. Creation: 
+7.  `Template string` is:  
+let currentTemp = 21.5;  
+const message = `` ` ``The current temperature is ${currentTemp}\u00b0C`` ` ``;
+8.  3 + '30' = '330';  
+3 * '30' = 90;
+9.  Symbols are ES6 update, each symbol is unique which is good for identifiers for example.  
+Creation:  
 `const RED = Symbol();`
 10. When in doubt prefer `null` over `undefined`.
 11. An object is a container and its contents are subject to change (contents change, but the object is the same). Contents of objects are called `object members or properties`. 
-12. There is `computed member access` option in case you need 'bad' property names in your object. Example `myobject[invalid spacing in name]` = "Still valid key, though cannot be accessed using a standard .dot operator";
+12. There is `computed member access` option in case you need 'bad' property names in your object.  
+Example:  
+`myobject[invalid spacing in name]` = "Still valid key, though cannot be accessed using a standard .dot operator";
 13. A function can be added to an object as ordinary key-value pair. Key will be that function name, value - function body.
 14. Delete property with `delete objectName.objectProperty`;
 15. Number, String, and Boolean data types seem to have properties because, after a call, a temporary object of a respective type is created. You can assign a property to a primitive with no visible error because that property will be assigned to a temporary object. Still, this data will be lost as the object is destroyed immediately after the call.
-16. An array is a special object with a fixed order of elements. Arrays can contain an element of any data type. Example:
-`const arr = ['true',
-              false,
-              null,
-              {1: 'Even objects!'},
+16. An array is a special object with a fixed order of elements. Arrays can contain an element of any data type. Example:  
+<pre>
+`const arr = ['true',  
+              false,  
+              null,  
+              {1: 'Even objects!'},  
 ];`
-17. A regular expression or `regex` is a syntax for search/replace operations in strings. `const email = /\b[a-z0-9._-]+@[a-z_-]+(?:\.[a-z]+)+\b/;`.
+</pre>
+17. A regular expression or `regex` is a syntax for search/replace operations in strings.  
+`const email = /\b[a-z0-9._-]+@[a-z_-]+(?:\.[a-z]+)+\b/;`.
 18. Convert strings to numbers using `Number(); parseInt(); parseFloat();`.
 19. Convert  all JS objects to strings using `.toString();` method
 20. Convert all values to boolean using `!!` or `Boolean();`.
@@ -127,19 +133,14 @@ const message = "The current temperature is ${currentTemp}\u00b0C";
 2.  In this chapter you can consider `truthy === true` and `falsy === false`. More coming in chapter 5.
 3.  When you add { and } in your JS code you create a `block statement or compound statement`. 
 4.  Generally, indents do not affect interpreter, however correct indentation is essential for a clean, readable code.  
-5.  Remember that `` console.log(`a string with ${something}`);`` will return the value of `something` but `console.log('a string with ${something}');` won't. __Some revisions of the book have ' instead of ` in the code examples. __
+5.  Remember that `` console.log(`a string with ${something}`);`` will return the value of `something` but `console.log('a string with ${something}');` won't. **Some revisions of the book have ' instead of ` in the code examples.**
 6.  Control program flow with conditions (if...else, switch), loops (while, do...while, for), and special operators (break, continue, return, throw). 
 7.  `Metasyntax` is used in the book to describe program flow in this chapter. It is also used in Mozilla Developer Network.
 8. Cycle  `for([initialization]; [condition]; [final_expression]) {operators}` works this way: initialization -> check condition -> execute operators -> execute fina expression -> check condition and so on.
 9.  Switch operator's cases inside the function can be written with returns instead of breaks.
 10. `for ... in` and `for ... of` cycles are good for iteration in objects and arrays.
 11. Use return or break to avoid unnecessary calculations.
-12. Remember that `let i = 0;` inside for cycle will make i not visible after the cycle. If you need its value, try:
-`let  i = О;`
-`for(; i < BigArrayOfNumЬers.length;  i++)  {`
-  `if(isPrime(ЬigArrayOfNumЬers[i])) break;`
-  `}`
-`if(i === BigArrayOfNumЬers.length)  console.log('No prime numbers!');` ``else console.log(`First prime numbere is ${i) element`);``
+12. Remember that `let i = 0;` inside for cycle will make i not visible after the cycle.
 13. 
 14. 
 In this chapter you create 'Crown and Ancor' game. 
