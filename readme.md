@@ -123,18 +123,23 @@ const message = "The current temperature is ${currentTemp}\u00b0C";
 
 ## Chapter4
 
-1.  `Flowchart` is a visual representation of program workflow. 
-2.  In this chapter you can concidet `truthy === true` and `falsy === false`. More conimg in chapter 5.
+1.  `Flowchart` is a visual representation of the program workflow. 
+2.  In this chapter you can consider `truthy === true` and `falsy === false`. More coming in chapter 5.
 3.  When you add { and } in your JS code you create a `block statement or compound statement`. 
-4.  Generally indents does not affect interpreter, however correct indentation is essential for a clean, readable code.  
-5.  Remember that `` console.log(`a string with ${something}`);`` will return the value of `something` but console.log('a string with ${something}') won't. Some revisions of the book have ' instead of ` in the code examples. 
-6.  
-7.  
-8.  
-9.  
-10. 
-11. 
-12. 
+4.  Generally, indents do not affect interpreter, however correct indentation is essential for a clean, readable code.  
+5.  Remember that `` console.log(`a string with ${something}`);`` will return the value of `something` but `console.log('a string with ${something}');` won't. __Some revisions of the book have ' instead of ` in the code examples. __
+6.  Control program flow with conditions (if...else, switch), loops (while, do...while, for), and special operators (break, continue, return, throw). 
+7.  `Metasyntax` is used in the book to describe program flow in this chapter. It is also used in Mozilla Developer Network.
+8. Cycle  `for([initialization]; [condition]; [final_expression]) {operators}` works this way: initialization -> check condition -> execute operators -> execute fina expression -> check condition and so on.
+9.  Switch operator's cases inside the function can be written with returns instead of breaks.
+10. `for ... in` and `for ... of` cycles are good for iteration in objects and arrays.
+11. Use return or break to avoid unnecessary calculations.
+12. Remember that `let i = 0;` inside for cycle will make i not visible after the cycle. If you need its value, try:
+`let  i = О;`
+`for(; i < BigArrayOfNumЬers.length;  i++)  {`
+  `if(isPrime(ЬigArrayOfNumЬers[i])) break;`
+  `}`
+`if(i === BigArrayOfNumЬers.length)  console.log('No prime numbers!');` ``else console.log(`First prime numbere is ${i) element`);``
 13. 
 14. 
 In this chapter you create 'Crown and Ancor' game. 
