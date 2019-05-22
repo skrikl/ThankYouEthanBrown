@@ -101,9 +101,7 @@ let currentTemp = 21.5;
 const message = `` ` ``The current temperature is ${currentTemp}\u00b0C`` ` ``;
 8.  3 + '30' = '330';  
 3 * '30' = 90;
-9.  Symbols are ES6 update, each symbol is unique which is good for identifiers for example.  
-Creation:  
-`const RED = Symbol();`
+9.  Symbols are ES6 update, each symbol is unique which is good for identifiers for example. `const RED = Symbol();`
 10. When in doubt prefer `null` over `undefined`.
 11. An object is a container and its contents are subject to change (contents change, but the object is the same). Contents of objects are called `object members or properties`. 
 12. There is `computed member access` option in case you need 'bad' property names in your object.  
@@ -114,11 +112,11 @@ Example:
 15. Number, String, and Boolean data types seem to have properties because, after a call, a temporary object of a respective type is created. You can assign a property to a primitive with no visible error because that property will be assigned to a temporary object. Still, this data will be lost as the object is destroyed immediately after the call.
 16. An array is a special object with a fixed order of elements. Arrays can contain an element of any data type. Example:  
 <pre>
-`const arr = ['true',  
+const arr = ['true',  
               false,  
               null,  
               {1: 'Even objects!'},  
-];`
+];
 </pre>
 17. A regular expression or `regex` is a syntax for search/replace operations in strings.  
 `const email = /\b[a-z0-9._-]+@[a-z_-]+(?:\.[a-z]+)+\b/;`.
