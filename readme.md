@@ -98,7 +98,7 @@ To make it work add (cb) to the task functions (you can check the gulpfile examp
 6.  const s = "In JavaScript, use \\ as an `escape character` in strings";
 7.  `Template string` is:  
 let currentTemp = 21.5;  
-const message = `` ` ``The current temperature is ${currentTemp}\u00b0C`` ` ``;
+const message = `` ` ``The current temperature is `$`{currentTemp}\u00b0C`` ` ``;
 8.  3 + '30' = '330';  
 3 * '30' = 90;
 9.  Symbols are ES6 update, each symbol is unique which is good for identifiers for example. `const RED = Symbol();`
@@ -130,7 +130,7 @@ const arr = ['true',
 1.  `Flowchart` is a visual representation of the program workflow. 
 2.  In this chapter you can consider `truthy === true` and `falsy === false`. More coming in chapter 5.
 3.  When you add { and } in your JS code you create a `block statement or compound statement`. 
-4.  Generally, indents do not affect interpreter, however correct indentation is essential for a clean, readable code.  
+4.  Generally, indents do not affect interpreter, however correct indentation is essential for clean, readable code.  
 5.  Remember that `` console.log(`a string with ${something}`);`` will return the value of `something` but `console.log('a string with ${something}');` won't. **Some revisions of the book have ' instead of ` in the code examples.**
 6.  Control program flow with conditions (if...else, switch), loops (while, do...while, for), and special operators (break, continue, return, throw). 
 7.  `Metasyntax` is used in the book to describe program flow in this chapter. It is also used in Mozilla Developer Network.
@@ -138,11 +138,12 @@ const arr = ['true',
 9.  Switch operator's cases inside the function can be written with returns instead of breaks.
 10. `for ... in` and `for ... of` cycles are good for iteration in objects and arrays.
 11. Use return or break to avoid unnecessary calculations.
-12. Remember that `let i = 0;` inside for cycle will make i not visible after the cycle.
-13. 
-14. 
-In this chapter you create 'Crown and Ancor' game. 
-## Chapter5
+12. Remember that `let i = 0;` inside for cycle will make `i` not visible after the cycle.
+13. Use `decreasing index` to loop through an array when you modify the array in the same loop. Array modification can change the exit conditions or you can even skip elements because indexes changed. 
+14. In this chapter, you create 'Crown and Ancor' game to practice program flow control. The code can be found in the chapter4 folder.
+
+## Chapter5 
+
 1.  
 2.  
 3.  
