@@ -144,8 +144,8 @@ const arr = ['true',
 
 ## Chapter5 
 
-1.  
-2.  
+1.  Empty array `arr = [];` is true, use `arr.length` instead if you need an empty array to be false. 
+2.  Prefer strict equality over abstract equality. Two values are strict equal when they link to the same object, or have the same type and value (for base types). 
 3.  
 4.  
 5.  
