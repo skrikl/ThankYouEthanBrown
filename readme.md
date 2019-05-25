@@ -144,15 +144,24 @@ const arr = ['true',
 
 ## Chapter5 
 
-1.  Empty array `arr = [];` is true, use `arr.length` instead if you need an empty array to be false. 
-2.  Prefer strict equality over abstract equality. Two values are strict equal when they link to the same object, or have the same type and value (for base types). 
-3.  Checking equality of non-integer numbers may fail because of limited accuracy of numbers like 0.1.
-4.  + operator is used as a sum and as a concatenation. 
-5.  
-6.  
-7.  
-8.  
-9.  
+1.  False in JS:  
+    `
+    - undefined
+    - null
+    - false
+    - 0
+    - NaN
+    - '' empty string`
+2.  Logical operators in JS works not only with logical typed of data, moreover the `returned value can also be different from logical type`.
+3.  Empty array `arr = [];` is true, use `arr.length` instead if you need an empty array to be false. 
+4.  Prefer strict equality over abstract equality. Two values are strict equal when they link to the same object, or have the same type and value (for base types). 
+5.  Checking equality of non-integer numbers may fail because of limited accuracy of numbers   like 0.1.
+6.  \+ operator is used as a sum and as a concatenation. 
+7.  `(x || y) && x !== y` is equivalent to XOR logical operator.
+8.  `Short-circuit evaluation` is used by JS when the first argument in logical expression immidiately gives the answer. For example in (x && y) when x has false it does not matter what value y has.
+9.  Be attentive at table 5.6. Some revisions of the book has an error in it.  
+![Logical operators table is incorrect](chapter5/img/logicalOperators.png)  Refer to MDN for a good short explanation:  
+![Logical operators logic](chapter5/img/mdn.png)
 10. 
 11. 
 12. 
