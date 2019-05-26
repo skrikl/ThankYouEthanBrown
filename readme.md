@@ -181,12 +181,21 @@ console.log(`${nums.length - i} numbers remain.`);
 14. There was no coding exercise in this chapter.
 
 ## Chapter6
-1.  
-2.  
-3.  
-4.  
-5.  
-6.  
+1.  Function is a set of operators, that can be called using that function name folowed by a set of parenthesis. Functions form a kind of subprograms in your code. Each function has a body - set of operators, that are executed as a single block of instructions.
+2.  A function call is an expression, so it returns a `function's return value`. 
+3.  Formal arguments of a function get values after a function call and become `actual arguments`. Actual arguments are simular to the variables, but exist only inside the function. 
+4.  Base types are `value type`. When you assign these variables to other variables using =, you `copy the value` to the new variable. Objects are `reference type` and a link to the object is copied to a new variable or  transfered to a function.
+5.  Destructured function argument allows to use object's elements as function arguments.  
+<pre>
+function getSentence({subject, verb, object}) 
+  return `${subject} ${verb} ${object}`;
+const о = {subject:  "I", 
+           verb:  "love",
+           object:  "JavaScript",
+};
+getSentence(o); // "I love JavaScript" 
+</pre> 
+6.  Wnen a function is an object property it is called this object's `method`.
 7.  
 8.  
 9.  
