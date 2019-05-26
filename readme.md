@@ -123,7 +123,7 @@ const arr = ['true',
 18. Convert strings to numbers using `Number(); parseInt(); parseFloat();`.
 19. Convert  all JS objects to strings using `.toString();` method
 20. Convert all values to boolean using `!!` or `Boolean();`.
-21. There were no coding exercise in this chapter.
+21. There was no coding exercise in this chapter.
 
 ## Chapter4
 
@@ -175,8 +175,10 @@ console.log(`${nums.length - i} numbers remain.`);
 </pre>`
 11. = operator is also an expression, so it returns the assigned value, which makes chain assignment possible `let x = y = "both x and y gets this string"`;
 12. `Destructuring assignment` lets you to assign individual elements of an object or the array to separate variables.
-13. 
-14. 
+13. Destructuring assignment makes value exchange possible without a temporary variable.  
+`let a = 5, b = 10;  
+[a, b] = [b, a];`
+14. There was no coding exercise in this chapter.
 
 ## Chapter6
 1.  
