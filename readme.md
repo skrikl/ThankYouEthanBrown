@@ -152,19 +152,29 @@ const arr = ['true',
     - 0
     - NaN
     - '' empty string`
-2.  Logical operators in JS works not only with logical typed of data, moreover the `returned value can also be different from logical type`.
-3.  Empty array `arr = [];` is true, use `arr.length` instead if you need an empty array to be false. 
-4.  Prefer strict equality over abstract equality. Two values are strict equal when they link to the same object, or have the same type and value (for base types). 
-5.  Checking equality of non-integer numbers may fail because of limited accuracy of numbers   like 0.1.
+2.  Logical operators in JS works not only with logical typed of data; moreover, the `returned value can also be different from logical type`.
+3.  Empty array `arr = [];` is true, use `arr.length` instead when you need an empty array to be false. 
+4.  Prefer strict equality over abstract equality. Two values are strictly equal when they link to the same object or have the same type and value (for base types). 
+5.  Checking equality of non-integer numbers may fail because of the limited accuracy of numbers like 0.1.
 6.  \+ operator is used as a sum and as a concatenation. 
 7.  `(x || y) && x !== y` is equivalent to XOR logical operator.
-8.  `Short-circuit evaluation` is used by JS when the first argument in logical expression immidiately gives the answer. For example in (x && y) when x has false it does not matter what value y has.
-9.  Be attentive at table 5.6. Some revisions of the book has an error in it.  
+8.  `Short-circuit evaluation` is used by JS when the first argument in logical expression immediately gives the answer. For example in (x && y) when x has false it does not matter what value y has.
+9.  Be attentive at table 5.6. Some revisions of the book have an error in it.  
 ![Logical operators table is incorrect](chapter5/img/logicalOperators.png)  Refer to MDN for a good short explanation:  
 ![Logical operators logic](chapter5/img/mdn.png)
-10. 
-11. 
-12. 
+10. p.122 example before table 5.9 can also be incorrect. Comma operator will not work as intended. Try this instead:  
+`<pre>
+const arr = [3, 5, 8, 11, 4, 13, 1];
+let n, i=0;
+
+while((n = nums[i]) < 10 && i++ < nums.length) {
+  console.log(`Number less than 10: ${n}.`);
+}
+console.log(`Number greater than 10 found: ${n}.`);
+console.log(`${nums.length - i} numbers remain.`);
+</pre>`
+11. = operator is also an expression, so it returns the assigned value, which makes chain assignment possible `let x = y = "both x and y gets this string"`;
+12. `Destructuring assignment` lets you to assign individual elements of an object or the array to separate variables.
 13. 
 14. 
 
