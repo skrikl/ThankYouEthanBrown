@@ -160,7 +160,7 @@ const arr = ['true',
 7.  `(x || y) && x !== y` is equivalent to XOR logical operator.
 8.  `Short-circuit evaluation` is used by JS when the first argument in logical expression immediately gives the answer. For example in (x && y) when x has false it does not matter what value y has.
 9.  Be attentive at table 5.6. Some revisions of the book have an error in it.  
-![Logical operators table is incorrect](chapter5/img/logicalOperators.png)  Refer to MDN for a good short explanation:  
+![Logical operators table is incorrect](chapter5/img/logicalOperators.png  Refer to MDN for a good short explanation:  
 ![Logical operators logic](chapter5/img/mdn.png)
 10. p.122 example before table 5.9 can also be incorrect. Comma operator will not work as intended. Try this instead:  
 `<pre>
@@ -195,10 +195,16 @@ const о = {subject:  "I",
 };
 getSentence(o); // "I love JavaScript" 
 </pre> 
-6.  Wnen a function is an object property it is called this object's `method`.
-7.  
-8.  
-9.  
+6.  ES6 brings `default values` to the functions. Arguments with no value nor default still get 'undefined'.
+7.  Wnen a function is an object property it is called this object's `method`.
+<pre>
+const obj = {
+  sayHi() {return "Hi!";},
+  sayHello: function() {return "Hello!";},
+}
+</pre>
+8.  Keyword `this` is usually associated with function properties of objects. When this is called it is assigned to the object, that called this. 
+9.  `const that = this` is often used to fix 'this' problem in nested functions. Call to 'this' from a function iside the method assigns global object to 'this' (or to undefined in `strict mode`).
 10. 
 11. 
 12. 
