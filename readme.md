@@ -205,8 +205,8 @@ const obj = {
 </pre>
 8.  Keyword `this` is usually associated with function properties of objects. When this is called it is assigned to the object, that called this. 
 9.  `const that = this` is often used to fix 'this' problem in nested functions. Call to 'this' from a function iside the method assigns global object to 'this' (or to undefined in `strict mode`).
-10. 
-11. 
+10. `IIFE` stands for Immediately Invoked Function Expression
+11. `Arrow notation` let you create an arrow function with different syntax. Arrow function has special 'this' handling, they can't be used as an object constructor, special variable 'arguments' is not available.
 12. 
 13. 
 14. 
