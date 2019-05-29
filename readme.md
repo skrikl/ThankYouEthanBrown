@@ -207,15 +207,16 @@ const obj = {
 9.  `const that = this` is often used to fix 'this' problem in nested functions. Call to 'this' from a function iside the method assigns global object to 'this' (or to undefined in `strict mode`).
 10. `IIFE` stands for Immediately Invoked Function Expression
 11. `Arrow notation` let you create an arrow function with different syntax. Arrow function has special 'this' handling, they can't be used as an object constructor, special variable 'arguments' is not available.
-12. 
-13. 
-14. 
+12. 'this can be defined using several special methods like `call, apply and bind` even if the function is defined outside of any of your objects. 
+13. Method `call` recives the object to be used as 'this' as the first argument. Next arguments are used as the arguments of your function.
+14. Method `apply` works the same way except for the arguments, that are passed as an array.
+15. Method `bind` associate a function with an object permanently and wthis will not be overrriden with the next 'call' or 'apply'calls.
 
 ## Chapter7
-1.  
-2.  
-3.  
-4.  
+1.  Variables can be in certain `scope`, `visibility`, and `execution context`. There are `global scope`, `block scope`, `function scope`.
+2.  Function's visibility area include varibles, that were defined before this function definition.
+3.  `Variable masking` happens, when you have the variables with the same name in nested blocks. You can't call the variable from the outer block, when you are inside the inner block even though both of these variables are in scope.
+4.  `Closure` is ?
 5.  
 6.  
 7.  
