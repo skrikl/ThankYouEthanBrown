@@ -214,9 +214,9 @@ const obj = {
 
 ## Chapter7
 1.  Variables can be in certain `scope`, `visibility`, and `execution context`. There are `global scope`, `block scope`, `function scope`.
-2.  Function's visibility area include varibles, that were defined before this function definition.
-3.  `Variable masking` happens, when you have the variables with the same name in nested blocks. You can't call the variable from the outer block, when you are inside the inner block even though both of these variables are in scope.
-4.  `Closure` is ?
+2.  Function's visibility area include variables, that were defined before this function definition.
+3.  `Variable masking` happens, when you have the variables with the same name in nested blocks. You can't call the variable from the outer block when you are inside the inner block even though both of these variables are in scope.
+4.  Function definitions are hoisted, function expressions are not. 
 5.  
 6.  
 7.  
@@ -229,8 +229,8 @@ const obj = {
 14. 
 
 ## Chapter8
-1.  
-2.  
+1. Arrays are special objects because of the fixed element's positions defined by elements numerical index. Arrays can store elements of all data types (including object) in any combination.
+2.  Assigning a value to unexisting array element creates it. If the index of this element (n) is much higher than array length, then the array will be auto populated to (n-1) length with 'undefined' data type elements.  
 3.  
 4.  
 5.  
