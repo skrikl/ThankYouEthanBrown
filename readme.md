@@ -178,7 +178,7 @@ console.log(`${nums.length - i} numbers remain.`);
 13. Destructuring assignment makes value exchange possible without a temporary variable.  
 <pre>
 let a = 5, b = 10;  
-[a, b] = [b, a];`
+[a, b] = [b, a];
 </pre>
 14. There was no coding exercise in this chapter.
 
