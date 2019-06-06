@@ -163,7 +163,7 @@ const arr = ['true',
 ![Logical operators table is incorrect](chapter5/img/logicalOperators.png  Refer to MDN for a good short explanation:  
 ![Logical operators logic](chapter5/img/mdn.png)
 10. p.122 example before table 5.9 can also be incorrect. Comma operator will not work as intended. Try this instead:  
-`<pre>
+<pre>
 const arr = [3, 5, 8, 11, 4, 13, 1];
 let n, i=0;
 
@@ -172,12 +172,14 @@ while((n = nums[i]) < 10 && i++ < nums.length) {
 }
 console.log(`Number greater than 10 found: ${n}.`);
 console.log(`${nums.length - i} numbers remain.`);
-</pre>`
+</pre>
 11. = operator is also an expression, so it returns the assigned value, which makes chain assignment possible `let x = y = "both x and y gets this string"`;
 12. `Destructuring assignment` lets you to assign individual elements of an object or the array to separate variables.
 13. Destructuring assignment makes value exchange possible without a temporary variable.  
-`let a = 5, b = 10;  
+<pre>
+let a = 5, b = 10;  
 [a, b] = [b, a];`
+</pre>
 14. There was no coding exercise in this chapter.
 
 ## Chapter6
