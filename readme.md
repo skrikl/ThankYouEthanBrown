@@ -247,10 +247,10 @@ const obj = {
 14. 
 
 ## Chapter9
-1.  
-2.  
-3.  
-4.  
+1.  Objects are indexed with a string or a symbor, while arrays are indexed with numbers. Another major difference is that arrays are ordered, while object's properties are not.
+2.  `for ... in` is a standard way to loop over object's properties. It does not work with symbol keys though.
+3.  `Object.keys` is another way. It is a method and it returns all keys of object as an array.
+4.  Object oriented programming main idea is to describe real-world objects as a logically connected set of properties and possible actions or functions. In OOP there is a division between an abstract object (a car) and the exact object (the car with known make model, owner and so on).   
 5.  
 6.  
 7.  
