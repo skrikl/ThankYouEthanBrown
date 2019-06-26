@@ -13,7 +13,7 @@ This is a tracker of my JS learning progress with [Ethan Brown's](https://github
 
 **📖 Contents:** 
 
-- [Chapter1](#chapter1)
+- [Chapter1](#Chapter1)
 - [Chapter2](#Chapter2)
 - [Chapter3](#Chapter3)
 - [Chapter4](#Chapter4)
@@ -22,7 +22,10 @@ This is a tracker of my JS learning progress with [Ethan Brown's](https://github
 - [Chapter7](#Chapter7)
 - [Chapter8](#Chapter8)
 - [Chapter9](#Chapter9)
-- [Chapter10](#Chapte10)
+- [Chapter10](#Chapter10)
+- [Chapter11](#Chapter11)
+- [Chapter12](#Chapter12)
+- [Chapter13](#Chapter13)
 - [Maintainers](#maintainers)
 - [Contributing](#contributing)
 - [License](#license)
@@ -253,8 +256,8 @@ const obj = {
 4.  Object oriented programming main idea is to describe real-world objects as a logically connected set of properties and possible actions or functions. In OOP there is a division between an abstract object (a car) and the specific object (the car with known make model, owner and so on).   
 5.  An `instace` is created from a `class` by executing the `constructor`, which initialize the instance, its properties, and its `methods`. If some method refers to the class at whole and not to a specific instance of it, there is a room for a `class method`. Describing complex things may also involve `subclass` and `superclass` addition. 
 6.  `instanceof` is an operator that can check if your object is an instance of class.
-7.    
-8.  
+7.  By convention prefixing a property with underscore mean `private property`. Use it with `accessor properties` to protect a property from direct value editing.  
+8.  154page
 9.  
 10. 
 11. 
@@ -277,7 +280,51 @@ const obj = {
 12. 
 13. 
 14. 
-
+## Chapter11
+1.  
+2.  
+3.  
+4.  
+5.  
+6.  
+7.  
+8.  
+9.  
+10. 
+11. 
+12. 
+13. 
+14. 
+## Chapter12
+1.  Every iterable object (like an array for instance) has a built-in `iterator protocol`. It can be used to return an object consisting of two properties: `value` and `done`. Inside the 'value' property is the next itarable element while the service property 'done' indicates if there are more elements to iterate on. 
+2.  Get iterator by calling `.values()` method. You can write your own by modifying a Symbol.iterator method.
+3.  
+4.  
+5.  
+6.  
+7.  
+8.  
+9.  
+10. 
+11. 
+12. 
+13. 
+14. 
+## Chapter13
+1.   When a function has no side effects and always return the same output for the same set of inputs it is called a `pure function`.
+2.  Prefer pure functions because they are easier to test, easier to understand and make the code more portable.
+3.  
+4.  
+5.  
+6.  
+7.  
+8.  
+9.  
+10. 
+11. 
+12. 
+13. 
+14. 
 ## Maintainers
 
 [@skrikl](https://github.com/skrikl)
