@@ -313,7 +313,7 @@ const obj = {
 ## Chapter13
 1.   When a function has no side effects and always return the same output for the same set of inputs it is called a `pure function`.
 2.  Prefer pure functions because they are easier to test, easier to understand and make the code more portable.
-3.  
+3.  `typeof function` is a function, but `function instance of Object` is true as well. 
 4.  
 5.  
 6.  
