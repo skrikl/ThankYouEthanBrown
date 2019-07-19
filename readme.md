@@ -266,7 +266,7 @@ const obj = {
 14. 
 
 ## Chapter10
-1.  
+1.  `maps and sets` are two new data structures in ES6. Maps are similar to Objects, sets are similar to Arrays.
 2.  
 3.  
 4.  
